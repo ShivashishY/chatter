@@ -1,0 +1,163 @@
+body{
+    background: url(../img/bg.jpg) repeat;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.hole-center{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.cus-link:focus{
+    color:none !important;
+    outline: none !important;
+}
+.send-input{
+    height: 40px !important;
+}
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 280px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #9A9898;
+}
+
+#emojiWrapper {
+    display: none;
+    width: 350px;
+    height: 250px;
+    overflow-y:auto;
+    bottom: 50px;
+    right: 55px;
+    position: absolute;
+    background-color: #ECECEC;
+    box-shadow: 0 0 10px #555;
+    z-index: 999;
+    border-radius: 5px;
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+#emojiWrapper img:hover {
+    border: #337AB7 solid 1px;
+    border-radius: 3px;
+}
+.emoji{
+    display: inline;
+}
+
+.cus_icon_btn{
+    position: absolute;
+    right: 100px;
+    bottom: 132px;
+    z-index: 999;
+    background: transparent;
+    border: none;
+    opacity: 0.8;
+}
+
+.cus_icon_btn>img{
+    opacity: 0.6;
+}
+
+.cus_icon_btn:focus{
+    color:none !important;
+    outline: none !important;
+}
+
+.img_res{
+    max-width: 100%;
+    height: auto;
+}
+#clearMsg{
+    margin-right: 5px;
+}
+
+.img-res{
+    max-width: 100%;
+}
+
+.select-wrapper {
+    background: url(../img/upload.PNG) no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 140px;
+    bottom: 133px;
+    z-index: 99;
+    opacity: 0.6;
+}
+#sendImage {
+    width: 26px;
+    height: 26px;
+    margin-right: 50px;
+    opacity: 0;
+    filter: alpha(opacity=0); /* IE 5-7 */
+}

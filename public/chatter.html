@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chat App || Shivashish Yadav</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+        <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="./css/toastr.min.css"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+        <div class="hole-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 well">
+                        <div class="user-info">
+                            <label>Hello, <p class="user"></p></label>
+                            <button  data-toggle="modal" data-target="#about" class="btn btn-default pull-right"><i class="
+glyphicon glyphicon-thumbs-up"></i> About Me</button>
+                        </div>        
+                        <a class="btn btn-warning pull-right" href="/"><i class="glyphicon glyphicon-off"></i></a>                        
+                        <button id="clearMsg" class="btn btn-success pull-right"><i class="glyphicon glyphicon-refresh"></i></button>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"> 
+                                <p>Room Name:<h4 class="room"></h4></p>
+                            </div>
+                            <div class="panel-body"  id="scroll">
+                                <ul class="chat message">
+                                    <!--Message Here-->
+                                </ul>
+                            </div>
+                            <div class="panel-footer">
+                                <form id="message-form" autocomplete="off">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-comment"></i>
+                                            </span>
+                                            <input id="messageInput" class="form-control send-input" type="text" name="message" placeholder="Message.." required/>
+                                            <div id="emojiWrapper"></div>
+                                            <span class="input-group-addon">
+                                                <button class="btn-link cus-link" type="submit"><i class="glyphicon glyphicon-send"></i></button>
+                                            </span>
+                                        </div>
+                                        <h4>Info:</h4>
+                                        <p>To find room current users type <kbd>@currentUsers</kbd> in message box.</p>
+                                    </div>
+                                </form>  
+                                <button id="emoji" class="cus_icon_btn">
+                                    <img width="20" src="img/smile.png" />
+                                </button>
+                                <!--<button  class="cus_icon_btn_pic">
+                                    <i class="glyphicon glyphicon-picture"></i>
+                                </button>-->
+                                <span class="select-wrapper">
+                                    <input id="sendImage" type="file" value="image" accept="image/*"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">About Developer</h4>
+                </div>
+                <div align="center" class="modal-body">
+                    <div class="alert alert-success">
+                        <img width="120" src="img/logo.png" />
+                        <h2>Shivashish Yadav</h2>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4><a href="https://www.linkedin.com/in/shivashishyadav/" target="_blank">Linkedin</a></h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4><a href="https://www.facebook.com/shivashish.ydv" target="_blank">Facebook</a></h4>
+                        </div>
+                        <div class="col-md-4">                
+                            <h4><a href="https://github.com/ShivashishY/" target="_blank">GitHub</a></h4>
+                        </div>
+                    </div>
+                </div>
+        
+        <!--Script Section-->
+        <script src="/js/jquery-2.2.2.min.js"></script>
+        <script src="/js/socket.io-1.4.5.js"></script>
+        <script src="/js/moment.min.js"></script>
+        <script src="/js/toastr.min.js"></script>
+        <script src="/js/notification.js"></script>
+        <script src="/js/QueryParams.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript">            
+            window.location.hash="no-back-button";
+            window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+            window.onhashchange=function(){window.location.hash="no-back-button";}
+        </script>
+    </body>
+</html>
