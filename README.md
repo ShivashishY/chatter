@@ -2,8 +2,6 @@ Chatter
 ========================================
 
 ## my first node chat app using socket.io.
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FShivashishY%2Fchatter.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FShivashishY%2Fchatter?ref=badge_shield)
-
 
 Please refer the link: https://chatterme.herokuapp.com/
 
@@ -32,7 +30,3 @@ node server
 if any suggestion, Please let me know.
 
 # Happy Coding!!
-
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FShivashishY%2Fchatter.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FShivashishY%2Fchatter?ref=badge_large)
